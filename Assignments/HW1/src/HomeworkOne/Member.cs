@@ -23,14 +23,14 @@ namespace HomeworkOne
             Generate(id);
         }
 
-        public void Generate()
+        public virtual void Generate()
         {
             ID = random.Next(999999999 - 10000000 + 1) + 10000000;
             FirstName = Names.firstName[random.Next(Names.firstName.Length)];
             LastName = Names.lastName[random.Next(Names.lastName.Length)];
         }
 
-        public void Generate(int id)
+        public virtual void Generate(int id)
         {
             ID = id;
         }
