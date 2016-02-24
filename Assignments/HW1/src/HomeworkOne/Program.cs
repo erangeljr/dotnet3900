@@ -129,20 +129,23 @@ namespace HomeworkOne
         private static void Generate()
         {
             Console.WriteLine("Generating...");
-            Console.Write("How many members would you like to create? ");
+            var result = AskForNumber();
+            GenerateMembers(result);
+        }
+
+        private static int AskForNumber()
+        {
+            Console.WriteLine("Enter number of objects to generate: ");
             var result = Console.ReadLine();
 
             int number = 0;
-            if (Int32.TryParse(result, out number))
-            {
-                GenerateMembers(number);
-            }
+            Int32.TryParse(result, out number);
+            return number;
 
         }
 
         private static void GenerateMembers(int number)
         {
-
             Console.WriteLine($"Generating {number} members");
         }
 
