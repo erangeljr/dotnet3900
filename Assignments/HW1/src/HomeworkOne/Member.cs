@@ -9,7 +9,7 @@ namespace HomeworkOne
 {
     public abstract class Member : IComparable<Member>, ISerializable
     {
-        public Random rnd = new Random();
+        public Random random = new Random();
         public int ID = 0;
         protected string FirstName, LastName;
 
@@ -25,7 +25,9 @@ namespace HomeworkOne
 
         public void Generate()
         {
-            ID = rnd.Next(999999999 - 10000000 + 1) + 10000000;
+            ID = random.Next(999999999 - 10000000 + 1) + 10000000;
+            FirstName = Names.firstName[random.Next(Names.firstName.Length)];
+            LastName = Names.lastName[random.Next(Names.lastName.Length)];
         }
 
         public void Generate(int id)
