@@ -130,7 +130,29 @@ namespace HomeworkOne
 
         private static void DisplayMenu()
         {
-            System.Console.WriteLine(MENU);
+            ShowMenu();
+        }
+        private static void ShowMenu()
+        {
+            // TODO Auto-generated method stub
+            Console.WriteLine();
+            Console.WriteLine("================ CS 394 Assignment 1 ===============\n");
+            Console.WriteLine("G/g:   Ask for a N, and generate N members of mixed\n" +
+                    "\tMember class's objects, and store in a List\n" +
+                    "\tand a array Objects.\n");
+            Console.WriteLine("S/s/ : Sort the members in the List and array in\n" +
+                    "\tascending order.\n");
+            Console.WriteLine("V/v/ : Show the members in the List and array.\n");
+            Console.WriteLine("D/d/ : Save objects inside List into a HTML file\n" +
+                    "\twith objects saved in the format of HTML Table.\n");
+            Console.WriteLine("F/f  : Show HTML file contents on screen.\n");
+            Console.WriteLine("L/l  : Launch the default internet browser to\n" +
+                   "\tdisplay the generated HTML file.\n");
+            Console.WriteLine("--------------------------------------------------\n");
+            Console.WriteLine("H/h/?: Display this menu.\n");
+            Console.WriteLine("E/e  : Exit\n");
+            Console.WriteLine("=================================================\n");
+
         }
     }
 }
