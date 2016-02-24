@@ -37,14 +37,12 @@ namespace HomeworkOne
         
         public string toString()
         {
-            //TODO Format String
-            return string.Empty;
+            return String.Format($"{ID, 6} {FirstName, 12} {LastName, 12}");
         }
 
-        public string toString(bool lab)
+        public string toString(bool value)
         {
-            //TODO Format String
-            return string.Empty;
+            return String.Format($"{0} {ID,6} {FirstName,12} {LastName,12}", value ? "MEM":"");
         }
 
         public string htmlRow()
