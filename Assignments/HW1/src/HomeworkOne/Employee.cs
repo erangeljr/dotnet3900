@@ -39,12 +39,12 @@
             return (value ? "EMP " : "") + toString();
         }
 
-        public string htmlRow()
+        public string HtmlRow()
         {
-            return "<tr>" + htmlColumns() + "</tr>";
+            return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string htmlColumns()
+        public string HtmlColumns()
         {
             return base.htmlColumns() +
                    "<td>" + Department + "</td>";

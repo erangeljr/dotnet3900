@@ -40,15 +40,15 @@
             return (value ? "FAC " : "") + toString();
         }
 
-        public string htmlRow()
+        public string HtmlRow()
         {
-            return "<tr>" + htmlColumns() + "</tr>";
+            return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string htmlColumns()
+        public string HtmlColumns()
         {
             return
-                base.htmlColumns() +
+                base.HtmlColumns() +
                 "<td>" + DegreeHeld + "</td>" +
                 "<td>" + Position + "</td>";
         }
