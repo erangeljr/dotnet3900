@@ -43,22 +43,22 @@ namespace HomeworkOne
             ID = id;
         }
 
-        public string toString()
+        public string ToString()
         {
             return string.Format($"{ID,6} {FirstName,12} {LastName,12}");
         }
 
-        public string toString(bool value)
+        public string ToString(bool value)
         {
             return string.Format($"{0} {ID,6} {FirstName,12} {LastName,12}", value ? "MEM" : "");
         }
 
-        public string htmlRow()
+        public string HtmlRow()
         {
-            return "<tr>" + htmlColumns() + "</tr>";
+            return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string htmlColumns()
+        public string HtmlColumns()
         {
             return "<td>" + ID + "</td>" +
                    "<td>" + LastName + "</td>" +

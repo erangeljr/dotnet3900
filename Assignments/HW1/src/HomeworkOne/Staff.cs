@@ -29,15 +29,15 @@ namespace HomeworkOne
             Skill = Names.skill[random.Next(Names.skill.Length)];
         }
 
-        public string toString()
+        public string ToString()
         {
-            return base.toString() +
+            return base.ToString() +
                    string.Format(" %s %s ", JobTitle, Skill);
         }
 
-        public string toString(bool value)
+        public string ToString(bool value)
         {
-            return (value ? "STA " : "") + toString();
+            return (value ? "STA " : "") + ToString();
         }
 
         public string HtmlRow()

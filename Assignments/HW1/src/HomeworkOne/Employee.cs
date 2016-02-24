@@ -28,15 +28,15 @@
             Department = Names.department[random.Next(Names.department.Length)];
         }
 
-        public string toString()
+        public string ToString()
         {
-            return base.toString() +
+            return base.ToString() +
                    string.Format($"{Department}");
         }
 
         public string toString(bool value)
         {
-            return (value ? "EMP " : "") + toString();
+            return (value ? "EMP " : "") + ToString();
         }
 
         public string HtmlRow()
@@ -46,7 +46,7 @@
 
         public string HtmlColumns()
         {
-            return base.htmlColumns() +
+            return base.HtmlColumns() +
                    "<td>" + Department + "</td>";
         }
     }

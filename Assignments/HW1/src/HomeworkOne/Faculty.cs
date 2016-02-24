@@ -29,15 +29,15 @@
             Position = Names.position[random.Next(Names.position.Length)];
         }
 
-        public string toString()
+        public string toStToStringring()
         {
-            return base.toString() +
+            return base.ToString() +
                    string.Format($" {DegreeHeld} {Position} ");
         }
 
-        public string toString(bool value)
+        public string ToString(bool value)
         {
-            return (value ? "FAC " : "") + toString();
+            return (value ? "FAC " : "") + ToString();
         }
 
         public string HtmlRow()
