@@ -64,7 +64,9 @@ namespace HomeworkOne
 
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            throw new NotImplementedException();
+            info.AddValue("ID", ID, typeof(int));
+            info.AddValue("FirstName", FirstName,typeof(string));
+            info.AddValue("LastName",LastName,typeof(string));
         }
     }
 }
