@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HomeworkOne
 {
     public abstract class Member : IComparable<Member>, ISerializable
     {
-        public Random random = new Random();
-        public int ID = 0;
         protected string FirstName, LastName;
+        public int ID;
+        public Random random = new Random();
 
         public Member()
         {
@@ -21,6 +17,18 @@ namespace HomeworkOne
         public Member(int id)
         {
             Generate(id);
+        }
+
+        public int CompareTo(Member other)
+        {
+            return ID - other.ID;
+        }
+
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("ID", ID, typeof (int));
+            info.AddValue("FirstName", FirstName, typeof (string));
+            info.AddValue("LastName", LastName, typeof (string));
         }
 
         public virtual void Generate()
@@ -34,15 +42,15 @@ namespace HomeworkOne
         {
             ID = id;
         }
-        
+
         public string toString()
         {
-            return String.Format($"{ID, 6} {FirstName, 12} {LastName, 12}");
+            return string.Format($"{ID,6} {FirstName,12} {LastName,12}");
         }
 
         public string toString(bool value)
         {
-            return String.Format($"{0} {ID,6} {FirstName,12} {LastName,12}", value ? "MEM":"");
+            return string.Format($"{0} {ID,6} {FirstName,12} {LastName,12}", value ? "MEM" : "");
         }
 
         public string htmlRow()
@@ -53,20 +61,8 @@ namespace HomeworkOne
         public string htmlColumns()
         {
             return "<td>" + ID + "</td>" +
-                    "<td>" + LastName + "</td>" +
-                    "<td>" + FirstName + "</td>";
-        }
-
-        public int CompareTo(Member other)
-        {
-            return ID - other.ID;
-        }
-
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            info.AddValue("ID", ID, typeof(int));
-            info.AddValue("FirstName", FirstName,typeof(string));
-            info.AddValue("LastName",LastName,typeof(string));
+                   "<td>" + LastName + "</td>" +
+                   "<td>" + FirstName + "</td>";
         }
     }
 }
