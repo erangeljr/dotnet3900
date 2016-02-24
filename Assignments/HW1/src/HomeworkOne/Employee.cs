@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HomeworkOne
+﻿namespace HomeworkOne
 {
     public class Employee : Member
     {
-        protected string Department { get; set; } = string.Empty;
         private int yearHired = 0;
 
         public Employee()
@@ -20,6 +13,8 @@ namespace HomeworkOne
         {
             Generate(id);
         }
+
+        protected string Department { get; set; } = string.Empty;
 
         public override void Generate()
         {
@@ -36,7 +31,7 @@ namespace HomeworkOne
         public string toString()
         {
             return base.toString() +
-                    String.Format($"{ Department }");
+                   string.Format($"{Department}");
         }
 
         public string toString(bool value)
@@ -52,8 +47,7 @@ namespace HomeworkOne
         public string htmlColumns()
         {
             return base.htmlColumns() +
-                    "<td>" + Department + "</td>";
+                   "<td>" + Department + "</td>";
         }
-
     }
 }
