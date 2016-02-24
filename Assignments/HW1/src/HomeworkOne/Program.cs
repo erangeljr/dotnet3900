@@ -10,7 +10,7 @@ namespace HomeworkOne
     {
         const string MENU =
            "================ CS 394 Assignment 1 ===============  \n" +
-           "G/g : Ask for a N, and generate N members of mixed \n" +
+           "G/g : Ask for a N, and Gen N members of mixed \n" +
            "       Member class's objects, and store in a List  \n" +
            "       and a array Objects.\n" +
            "S/s/: Sort the members in the List and array in \n" +
