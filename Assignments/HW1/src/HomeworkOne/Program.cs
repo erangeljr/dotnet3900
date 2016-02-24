@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +10,12 @@ namespace HomeworkOne
 {
     class Program
     {
+
+        static Member[] memberArray = null;
+        static List<Member> memberList = new List<Member>();
+        static Random random = new Random();
+
+
         static void Main(string[] args)
         {
             DisplayMenu();
@@ -15,6 +23,23 @@ namespace HomeworkOne
             Console.Read();
         }
 
+        public static Member GetMember()
+        {
+            int kind = random.Next(4);
+
+            switch (kind)
+            {
+                case 0:
+                    return new Staff();
+                case 1:
+                    return new Faculty();
+                case 2:
+                    return new Employee();
+                case 3:
+                    return new Student();
+            }
+            return null;
+        }
         private static void ProcessInput()
         {
             var input = Console.ReadLine();
@@ -62,7 +87,18 @@ namespace HomeworkOne
 
         private static void Shutdown()
         {
-            Console.WriteLine("Exit...");
+            Console.WriteLine("Are you sure?[y/n]");
+            var result = Console.ReadLine();
+            switch (result)
+            {
+                case "Y":
+                case "y":
+                    Console.WriteLine("Goodbye.");
+                    break;
+                default:
+                    DisplayMenu();
+                    break;
+            }
         }
 
         private static void LaunchWebApp()
