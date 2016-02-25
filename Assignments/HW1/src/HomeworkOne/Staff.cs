@@ -2,6 +2,7 @@
 
 namespace HomeworkOne
 {
+    [Serializable]
     public class Staff : Employee
     {
         protected string JobTitle { get; set; } = String.Empty;
@@ -15,37 +16,37 @@ namespace HomeworkOne
         {
         }
 
-        public void Generate()
+        public new void Generate()
         {
             base.Generate();
             JobTitle = Names.title[random.Next(Names.title.Length)];
             Skill = Names.skill[random.Next(Names.skill.Length)];
         }
 
-        public void Generate(int id)
+        public new void Generate(int id)
         {
             base.Generate(id);
             JobTitle = Names.title[random.Next(Names.title.Length)];
             Skill = Names.skill[random.Next(Names.skill.Length)];
         }
 
-        public string ToString()
+        public new string ToString()
         {
             return base.ToString() +
-                   string.Format(" %s %s ", JobTitle, Skill);
+                   string.Format($" { JobTitle} {Skill} ");
         }
 
-        public string ToString(bool value)
+        public new string ToString(bool value)
         {
             return (value ? "STA " : "") + ToString();
         }
 
-        public string HtmlRow()
+        public new string HtmlRow()
         {
             return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string HtmlColumns()
+        public new string HtmlColumns()
         {
             return
                 base.HtmlColumns() +

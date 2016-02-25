@@ -1,5 +1,8 @@
-﻿namespace HomeworkOne
+﻿using System;
+
+namespace HomeworkOne
 {
+    [Serializable]
     public class Faculty : Employee
     {
         public Faculty()
@@ -15,14 +18,14 @@
         protected string DegreeHeld { get; set; } = string.Empty;
         protected string Position { get; set; } = string.Empty;
 
-        public void Generate()
+        public new void Generate()
         {
             base.Generate();
             DegreeHeld = Names.degree[random.Next(Names.degree.Length)];
             Position = Names.position[random.Next(Names.position.Length)];
         }
 
-        public void Generate(int id)
+        public new void Generate(int id)
         {
             base.Generate(id);
             DegreeHeld = Names.degree[random.Next(Names.degree.Length)];
@@ -35,17 +38,17 @@
                    string.Format($" {DegreeHeld} {Position} ");
         }
 
-        public string ToString(bool value)
+        public new string ToString(bool value)
         {
             return (value ? "FAC " : "") + ToString();
         }
 
-        public string HtmlRow()
+        public new string HtmlRow()
         {
             return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string HtmlColumns()
+        public new string HtmlColumns()
         {
             return
                 base.HtmlColumns() +

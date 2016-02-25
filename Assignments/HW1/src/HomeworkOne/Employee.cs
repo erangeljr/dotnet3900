@@ -1,34 +1,37 @@
-﻿namespace HomeworkOne
+﻿using System;
+
+namespace HomeworkOne
 {
+    [Serializable]
     public class Employee : Member
     {
         private int yearHired = 0;
 
         public Employee()
         {
-            Generate();
+            this.Generate();
         }
 
         public Employee(int id) : base(id)
         {
-            Generate(id);
+            this.Generate(id);
         }
 
         protected string Department { get; set; } = string.Empty;
 
-        public override void Generate()
+        public new void Generate()
         {
             base.Generate();
             Department = Names.department[random.Next(Names.department.Length)];
         }
 
-        public override void Generate(int id)
+        public new void Generate(int id)
         {
             base.Generate(id);
             Department = Names.department[random.Next(Names.department.Length)];
         }
 
-        public string ToString()
+        public new string ToString()
         {
             return base.ToString() +
                    string.Format($"{Department}");
@@ -39,12 +42,12 @@
             return (value ? "EMP " : "") + ToString();
         }
 
-        public string HtmlRow()
+        public new string HtmlRow()
         {
             return "<tr>" + HtmlColumns() + "</tr>";
         }
 
-        public string HtmlColumns()
+        public new string HtmlColumns()
         {
             return base.HtmlColumns() +
                    "<td>" + Department + "</td>";

@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace HomeworkOne
 {
+    [Serializable]
     public abstract class Member : IComparable<Member>, ISerializable
     {
         protected string FirstName, LastName;
@@ -24,7 +25,7 @@ namespace HomeworkOne
             return ID - other.ID;
         }
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("ID", ID, typeof (int));
             info.AddValue("FirstName", FirstName, typeof (string));
@@ -43,7 +44,7 @@ namespace HomeworkOne
             ID = id;
         }
 
-        public string ToString()
+        public new string ToString()
         {
             return string.Format($"{ID,6} {FirstName,12} {LastName,12}");
         }
