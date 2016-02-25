@@ -21,7 +21,7 @@ III.     Specification:
 the following structures:
 
   // In file MyList.C# 
-  public class MyList<C> {
+  public class MyList<T> {
 
      // Two inner classes
      protected class Node {
@@ -29,7 +29,7 @@ the following structures:
        ....
      }
 
-     protected class ListIterator implements Iterator<C> {
+     protected class ListIterator implements Iterator<T> {
        // ListerIterator's constructor, data and function members
        ....
      }
@@ -41,7 +41,7 @@ the following structures:
      
   // In file MyStack.C#
      
-  pulic class MyStack<C> extends MyList<C>{
+  pulic class MyStack<T> extends MyList<T>{
      // MyStack's function memebers and overriding MyList's insert() and
      // remove member functions so that the two functions will not be
      // called from my stack. All other functions will be inherited here.
@@ -50,11 +50,11 @@ the following structures:
 
   // In file MyQueue.C#
  
-  pulic class MyQueue<C> extends MyList<C>{  ... }
+  pulic class MyQueue<T> extends MyList<T>{  ... }
 
   // In file SortedQueue.C#
 
-  pulic class SortedQueue<C> extends MyList<C>{ ... }
+  pulic class SortedQueue<T> extends MyList<T>{ ... }
 
 --------------------------------------------------------------------------
                Specifictions of Classes and Their Members
@@ -66,7 +66,7 @@ the following structures:
                                 public constructor(s)
                                 T info; Node next, previous;
 
-  ListIterator Iterator<C>      An inner class of MyList
+  ListIterator Iterator<T>      An inner class of MyList
                                 public ListIterator( booleam dir );
                                 protected Node currentNode;
                                 protected bool forward;
@@ -74,16 +74,16 @@ the following structures:
                                 public E     next();
                                 public void    remove(); // optional
 
-   MyList<C>   Object,          public constructor(s)
-                                Iterable<C>     protected Node<C> front, rear; int count;
+   MyList<T>   Object,          public constructor(s)
+                                Iterable<T>     protected Node<T> front, rear; int count;
                                 public boolean empty();
                                 public int     size();
                                 void     insert(C obj, int position);
                                 C remove( int position );
 
                                 // MyList methods.
-                                public Iterator<C> iterator() { iterator( true ); }
-                                public Iterator<C> iterator(boolean direction) {
+                                public Iterator<T> iterator() { iterator( true ); }
+                                public Iterator<T> iterator(boolean direction) {
                                          return ListIterator( direction );
                                 } 
 
@@ -117,7 +117,7 @@ MyQueue and SortedQueue classs.
    When H/h/? is entered, the following menu is printed:
 
           +===================================================+
-          |    CS 394 Assignment:   Linked List Structures    | 
+          |    CS 3900 Assignment:   Linked List Structures    | 
           +===================================================+
           | G: Ask for a N, and generate N members of mixed   |
           |     kinds and put them into three list structures.|
