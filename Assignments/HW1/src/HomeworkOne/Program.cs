@@ -147,6 +147,15 @@ namespace HomeworkOne
         private static void GenerateMembers(int number)
         {
             Console.WriteLine($"Generating {number} members");
+            memberArray = new Member[number];
+            for (int i = 0; i < number; i++)
+            {
+                var member = GetMember();
+                memberArray[i] = member;
+                memberList.Add(member);
+            }
+            Console.WriteLine($"Array Length: {memberArray.Length} ");
+            Console.WriteLine($"List Length: {memberList.Count} ");
         }
 
         private static void DisplayMenu()
