@@ -11,10 +11,6 @@ namespace HomeworkOne
     class Program
     {
 
-        static Member[] memberArray = null;
-        static List<Member> memberList = new List<Member>();
-        static Random random = new Random();
-
 
         static void Main(string[] args)
         {
@@ -23,23 +19,7 @@ namespace HomeworkOne
             Console.Read();
         }
 
-        public static Member GetMember()
-        {
-            int kind = random.Next(4);
-
-            switch (kind)
-            {
-                case 0:
-                    return new Staff();
-                case 1:
-                    return new Faculty();
-                case 2:
-                    return new Employee();
-                case 3:
-                    return new Student();
-            }
-            return null;
-        }
+        
         private static void ProcessInput()
         {
             var input = Console.ReadLine();
@@ -130,7 +110,7 @@ namespace HomeworkOne
         {
             Console.WriteLine("Generating...");
             var result = AskForNumber();
-            GenerateMembers(result);
+            //GenerateMembers(result);
         }
 
         private static int AskForNumber()
@@ -144,20 +124,7 @@ namespace HomeworkOne
 
         }
 
-        private static void GenerateMembers(int number)
-        {
-            Console.WriteLine($"Generating {number} members");
-            memberArray = new Member[number];
-            for (int i = 0; i < number; i++)
-            {
-                var member = GetMember();
-                memberArray[i] = member;
-                memberList.Add(member);
-            }
-            Console.WriteLine($"Array Length: {memberArray.Length} ");
-            Console.WriteLine($"List Length: {memberList.Count} ");
-        }
-
+        
         private static void DisplayMenu()
         {
             ShowMenu();
