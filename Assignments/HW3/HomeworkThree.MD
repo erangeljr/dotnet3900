@@ -1,12 +1,12 @@
 		Assignment 3 : C# Generics and Implementation of Hash Tables
 	               Eddie Rangel
 
-I.	Purposes:
+###I.	Purposes:
 	- Implementation of generic class for hash table with linear
 	  probing as collison handling method.
 	- search time complexities of hash table.
 
-II.	Notices:
+###II.	Notices:
 
        1. You are encouraged to generate HTML files for each display required
           below, and start default browser to display the required contents.
@@ -15,7 +15,7 @@ II.	Notices:
        3. Copy *Hast*.* to your directory and Run "C# TestHashTable" to see
           results displayed below.
        
-III.	Description
+###III.	Description
 
 	Write a program which display the following line:
 
@@ -63,7 +63,7 @@ III.	Description
 +----------+--------------------------------------------------+----------+--------------------------------------------------+
 
 
-IV.	Note that
+###IV.	Note that
 
   1. If both table[capacity-1] and table[0] contain null, then those
      two cells belong to the same empty block, and if both of those 

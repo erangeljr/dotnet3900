@@ -2,9 +2,9 @@
                              Eddie Rangel
 
 
-I.     Purpose: OOP & Doubly Linked List Data Structures, and Generic Classes in C#
+###I.     Purpose: OOP & Doubly Linked List Data Structures, and Generic Classes in C#
 
-II.     Program Description:
+###II.     Program Description:
 
    The exercise is aimed at practicing the object-oriented
 programming methodology and the implementation of linked list data
@@ -15,7 +15,7 @@ generic classes will be used. The basic doubly-linked list structures including
 List, Stack, Queue and sorted queue will be defined using C# reference type.
 
 
-III.     Specification:
+###III.     Specification:
 
    Define the following generic classes with at least the following members with
 the following structures:
@@ -150,7 +150,7 @@ MyQueue and SortedQueue classs.
           | E  : Exit                                         |
           +===================================================+
 
-IV.     Things worth to mention:
+###IV.     Things worth to mention:
 
   1. Randomly generate mixed N members (including Member's subclass objects).
      When an object is generated, insert the the same node in each of
@@ -170,15 +170,15 @@ IV.     Things worth to mention:
      instanciate a variable. That is, you cannot use interface or abstact as
      operand of the 'new' operator.
 
-V.     Available Filess
+###V.     Available Filess
 
     Refer to homework 1
 
 
-VI.     CLASSPATH Environment Variable 
+###VI.     CLASSPATH Environment Variable 
 
     Refer to homeowrk 1
 
-VII.     How to turn in your assingment
+###VII.     How to turn in your assingment
 
     Refer to homework 1

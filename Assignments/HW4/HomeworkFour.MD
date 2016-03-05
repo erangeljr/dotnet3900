@@ -1,7 +1,7 @@
 		Assignment 4 : Multi-Threading & Piped Input/Oupt 
 	                   Eddie Rangel
 
-I. 	Concurrency or Parallel Programming	
+###I. 	Concurrency or Parallel Programming	
 
    Concurrecy or Parallet programming means multiple programs running at the same time
    to achive some common goals. Those programs may be running at the same machine
@@ -21,7 +21,7 @@ I. 	Concurrency or Parallel Programming
 
 	To achieve those two goals, we can use the following two techniques:
 
-II. 	Pipeline
+###II. 	Pipeline
 
    1. In cases of multiple processes or threads running and the same time, if one process/threa'
       output is the input of anther process/thread. The technique called pipeline can be used
@@ -35,7 +35,7 @@ II. 	Pipeline
       See C#.io package for APIs of piped input and ouput classe.
    
 
-III.	Assignment Description
+###III.	Assignment Description
 
    You are asked to write a program that implements heap-sort with multi-thread and
    piped input and output features. The basic requirements are

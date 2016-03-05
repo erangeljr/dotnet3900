@@ -4,7 +4,7 @@
                        Eddie Rangel
 
 
-I.	Goals and Related Techniques:
+###I.	Goals and Related Techniques:
 
     1. Read the three classic synchronization problems:
         producer-consuer, smoker-problem and rive-cossing probelm.
@@ -32,7 +32,7 @@ I.	Goals and Related Techniques:
    5. Basic C# 2D drawing.
 	 
 
-II.	Assignment Description
+###II.	Assignment Description
 
     Update the river-crossing program so that 
 

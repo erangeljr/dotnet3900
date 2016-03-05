@@ -81,7 +81,7 @@ display the html file containning the objects you will define.
 
    When H/h/? is entered, the following menu is printed:
 
-		================ CS 394 Homework 1 ===============
+		================ DN 3900 Homework 1 ===============
 		G/g:   Ask for a N, and generate N members of mixed
                Member class's objects, and store in a List 
 		       and a array Objects.
