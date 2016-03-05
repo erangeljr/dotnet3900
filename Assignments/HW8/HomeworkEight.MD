@@ -1,4 +1,4 @@
-		Assignment 8 :     Java PRogramming on Hand-Held Device 
+		Assignment 8 :     C# Programming on Hand-Held Device 
             
 	                           Eddie Rangel
 
@@ -8,7 +8,7 @@
 
 ###II.	Installation
 
-   - Install Android Studio on your personal computer, either IBM PC or Mac.
+   - Install Visual Studio or Xamarin on your personal computer, either IBM PC or Mac.
      If you have install old version of Android Studion, I suggest update it.
 
    - Use CSUB libray and/or internet to find book or resources to learn programming
