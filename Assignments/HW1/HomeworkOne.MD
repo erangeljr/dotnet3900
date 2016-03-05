@@ -1,9 +1,9 @@
 		Assignment 1: Class, Inheritance and Polymorphism
 	                  Eddie Rangel
 
-## I.	Purpose: Object-Oriented Prgramming in C# 
+### I.	Purpose: Object-Oriented Prgramming in C# 
 
-## II.	Description:
+### II.	Description:
 
    The purpose of this exercise is to practice the object-oriented
 programming methodologies with C#. The OOP features, data encapsulation,
@@ -13,19 +13,19 @@ and display the html file by launching the default internet browser to
 display the html file containning the objects you will define.
 
 
-## III.	Specification:
+### III.	Specification:
 
    Define the following class and minimum members:
 
 
     Class/	Super Class	Members (minimum request)
-###   Interface     & interfac
+####   Interface     & interfac
 =============   ==============  =======================================
-###   Names        Object		Interface containing constant names such
+####   Names        Object		Interface containing constant names such
 				first names, last names, department names
 				and etc.
 
-###   Member 	Object		public default constructor
+####   Member 	Object		public default constructor
 		Comparable	public void generate();
 				public String toString();
 				public String toString( boolean );
@@ -35,7 +35,7 @@ display the html file containning the objects you will define.
 				other necessay methods....
 				protected String firstName, lastName; long ID;
 
-###   Student	Member		public default constructor
+####   Student	Member		public default constructor
 				public void generate();
 				public String toString();
 				public String toString( boolean);
@@ -44,7 +44,7 @@ display the html file containning the objects you will define.
 				other necessay methods....
 				protected String major; float GPA;
 
-###   Employee	Member		public default constructor
+####   Employee	Member		public default constructor
 				public void generate();
 				public String toString();
 				public String toString( boolean);
@@ -53,7 +53,7 @@ display the html file containning the objects you will define.
 				other necessay methods....
 				protected String department; int yearHired;
 
-###   Faculty	Employee        public default  constructor
+####   Faculty	Employee        public default  constructor
 				public void generate();
 				public String toString();
 				public String toString(boolean);
@@ -62,7 +62,7 @@ display the html file containning the objects you will define.
 				other necessay methods....
 				protected String degreeHeld;
 
-###   Staff        Employee        public default constructor
+####   Staff        Employee        public default constructor
 				public void generate();
 				public String toString();
 				public String toString(boolean);
@@ -120,7 +120,7 @@ display the html file containning the objects you will define.
    ------------------------------------------------------
 
 
-##IV.	Things worth to mention:
+###IV.	Things worth to mention:
 
   1. Install .Net Core https://dotnet.github.io/
   2. Randomly generate mixed N members (including its subclass objects).
@@ -144,15 +144,15 @@ display the html file containning the objects you will define.
   11. https://msdn.microsoft.com/en-us/library/dybz98h0%28v=vs.71%29.aspx
   1v2. https://msdn.microsoft.com/en-us/library/618ayhy6.aspx 
 
-##V.	Files Available
+###V.	Files Available
 
 	Names.cs : interface contain names of members, department, sports.
 
-##VI.	CLASSPATH Environment Variable
+###VI.	CLASSPATH Environment Variable
 
 
 
-##VII.	How to turn in your C# programs
+###VII.	How to turn in your C# programs
 
     One C# project may spread in several files. Sending individual files to
 the instructor will be a big burden to him/her. Here is how can you put all
