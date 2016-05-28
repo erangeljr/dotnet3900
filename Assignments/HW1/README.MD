@@ -6,22 +6,25 @@
 ### II.	Description:
 
    The purpose of this exercise is to practice the object-oriented
-programming methodologies with C#. The OOP features, data encapsulation,
-inheritance and polymorphism, are used to implment a group of related
-class. Save the class objects in HTML Table format into a HTML file,
-and display the html file by launching the default internet browser to
-display the html file containning the objects you will define.
+programming methodologies such as data encapsulation,
+inheritance, and polymorphism using C#. 
+
+We will practice implementing interfaces to take advantage of the built-in features
+of the .Net Framework. 
+
+The goal of this project is to save the class objects in an HTML Table in an HTML File,
+and display the HTML file by launching the default internet browser.
 
 
 ### III.	Specification:
 
-   Define the following class and minimum members:
+   Define the following classes and minimum members:
 
 
-    Class/	Super Class	Members (minimum request)
+####   Class/	Super Class	M   embers (minimum request)
 ####   Interface     & interfac
 =============   ==============  =======================================
-####   Names        Object		Interface containing constant names such
+####   Names        Object		Abstract Base class containing constant names such
 				first names, last names, department names
 				and etc.
 
