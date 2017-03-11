@@ -1,19 +1,18 @@
-		Assignment 1: Class, Inheritance and Polymorphism
-	                  Eddie Rangel
+## Lesson 1: Class, Inheritance and Polymorphism
 
-### I.	Purpose: Object-Oriented Prgramming in C# 
+### Purpose: Object-Oriented Prgramming in C# 
 
-### II.	Description:
+### Description:
 
-   The purpose of this exercise is to practice the object-oriented
-programming methodologies with C#. The OOP features, data encapsulation,
+   The purpose of this less is to practice the object-oriented
+programming features of C#. Data encapsulation,
 inheritance and polymorphism, are used to implment a group of related
-class. Save the class objects in HTML Table format into a HTML file,
-and display the html file by launching the default internet browser to
+classes. You will save the class objects in an HTML Table format into a HTML file,
+and display the html file by launching the default web browser to
 display the html file containning the objects you will define.
 
 
-### III.	Specification:
+### Specification:
 
    Define the following class and minimum members:
 
