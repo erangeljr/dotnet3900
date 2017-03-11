@@ -18,7 +18,7 @@ namespace HomeworkOne
 
         public static string[] department = {
 	        "Math", "Business", "Moden Language", "Dentistry", "Optomistry",
-	        "Computer Sci.", "Pharmacy", "Engineering", "Fine Arts", "MIS",
+	        "Computer Science", "Pharmacy", "Engineering", "Fine Arts", "Software Engineering",
 	        "Biology", "Nursing"};
 
         public static string[] title = {
