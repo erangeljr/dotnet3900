@@ -119,7 +119,7 @@ display the html file containning the objects you will define.
    ------------------------------------------------------
 
 
-###IV.	Things worth to mention:
+###	Things worth to mention:
 
   1. Install .Net Core https://dotnet.github.io/
   2. Randomly generate mixed N members (including its subclass objects).
